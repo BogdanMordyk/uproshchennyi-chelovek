@@ -1,22 +1,11 @@
-﻿# Вы можете расположить сценарий своей игры в этом файле.
+# game/script.rpy (или game/script/00_init.rpy)
 
-# Определение персонажей игры.
-define e = Character('Эйлин', color="#c8ffc8")
+define d = Character("Даша")
+define n = Character(None)
 
-# Вместо использования оператора image можете просто
-# складывать все ваши файлы изображений в папку images.
-# Например, сцену bg room можно вызвать файлом "bg room.png",
-# а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
+image bg office_evening = "images/bg/office_evening.png"
+image dasha_neutral = "images/chars/dasha_neutral.png"
+image envelope = "images/items/envelope.png"
 
-# Игра начинается здесь:
 label start:
-
-    scene bg room
-
-    show eileen happy
-
-    e "Вы создали новую игру Ren'Py."
-
-    e "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
-
-    return
+    jump office_slice
