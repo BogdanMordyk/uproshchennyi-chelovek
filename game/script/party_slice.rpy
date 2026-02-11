@@ -2,6 +2,8 @@ label party_slice:
 
     scene bg office_party
 
+    play office_party "audio/ambience/office_party.ogg" fadein 1.0
+
     # Внутренние мысли Германа в зависимости от clarity
     if clarity >= 5:
         n "Корпоратив. И всё это выглядит… неправильно."
@@ -102,4 +104,8 @@ label party_slice:
         n "Слишком рано. Слишком прямо."
         n "Я делаю вид, что не растаял. И получается почти убедительно."
 
+    stop office_party fadeout 1.0
+
+    scene black
+    n "Конец демо."
     return
