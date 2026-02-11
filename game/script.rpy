@@ -12,6 +12,5 @@ image dasha_home = "images/chars/dasha_home.png"
 image envelope = "images/items/envelope.png"
 
 label start:
+    show screen clarity_fx
     jump office_slice
-
-
