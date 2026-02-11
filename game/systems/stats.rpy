@@ -3,6 +3,10 @@ default clarity = 0     # -2..+2 примерно
 default bond = 0        # отношение Даши
 default envelope = False
 
-# чтобы не фармить осмотр бесконечно
+# --- Office inspection flags ---
 default inspected_window = False
 default inspected_desk = False
+
+# --- Party inspection flags ---
+default inspected_tree = False
+default inspected_alcohol = False
