@@ -2,6 +2,8 @@ label home_slice:
 
     scene bg home_tv
 
+    play home_tv "audio/ambience/home_tv.ogg" fadein 1.0
+
     # Внутренние мысли Германа по clarity
     if clarity < 2:
         n "Тепло растекается по телу, как будто мир стал проще."
