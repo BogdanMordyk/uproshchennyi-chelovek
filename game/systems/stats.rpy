@@ -4,5 +4,5 @@ default bond = 0        # отношение Даши
 default envelope = False
 
 # чтобы не фармить осмотр бесконечно
-default inspected_door = False
+default inspected_window = False
 default inspected_desk = False
