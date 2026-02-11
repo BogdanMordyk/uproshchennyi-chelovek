@@ -20,7 +20,7 @@ label home_slice:
     if clarity > 2:
         call screen inspect_home
 
-    show dasha_neutral
+    show dasha_home
 
     # Ветка 1: bond > 2 — Даша спасает / уводит
     if bond > 2:
