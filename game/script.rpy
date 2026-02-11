@@ -8,8 +8,10 @@ image bg office_party = "images/bg/office_party.png"
 image bg home_tv = "images/bg/home_tv.png"
 image dasha_neutral = "images/chars/dasha_neutral.png"
 image dasha_party = "images/chars/dasha_party.png"
+image dasha_home = "images/chars/dasha_home.png"
 image envelope = "images/items/envelope.png"
 
 label start:
     jump office_slice
+
 
