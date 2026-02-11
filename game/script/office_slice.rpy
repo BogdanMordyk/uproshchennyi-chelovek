@@ -1,8 +1,5 @@
 # script/office_slice.rpy
 
-define d = Character("Даша")
-define n = Character(None)  # narration
-
 label office_slice:
 
     scene bg office_evening
