@@ -47,6 +47,7 @@ init python:
                 "Снег на экране словно шевелится не случайно.\n"
                 "Меня гипнотизируют. Меня держат здесь этим шумом."
             )
+            renpy.with_statement(renpy.display.core.Fade(0.05, 0.0, 0.05))
 
     def _inspect_wine():
         global clarity, inspected_wine
