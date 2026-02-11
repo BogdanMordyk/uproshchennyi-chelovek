@@ -1,0 +1,11 @@
+*.rpyc
+*.rpymc
+*.pyc
+__pycache__/
+
+cache/
+saves/
+log.txt
+traceback.txt
+.DS_Store
+Thumbs.db
