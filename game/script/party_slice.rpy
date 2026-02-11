@@ -105,7 +105,8 @@ label party_slice:
         n "Я делаю вид, что не растаял. И получается почти убедительно."
 
     stop office_party fadeout 1.0
-
-    scene black
-    n "Конец демо."
-    return
+    menu:
+        "Продолжить (дом)":
+            jump home_slice
+        "Выйти":
+            return
