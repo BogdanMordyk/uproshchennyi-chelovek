@@ -4,7 +4,7 @@ label office_slice:
 
     scene bg office_evening
 
-    play ambience "audio/ambience/office_hum.ogg" fadein 1.0
+    play office_hum "audio/ambience/office_hum.ogg" fadein 1.0
 
     n "Офис… странно спрятан. Не центр, но и не окраина."
     n "Новые дома вокруг, пустые окна, мокрый бетон."
@@ -78,7 +78,7 @@ label office_slice:
     pause 0.6
     d "…обычно так и происходит."
 
-    stop ambience fadeout 1.0
+    stop office_hum fadeout 1.0
 
     scene black
     menu:
