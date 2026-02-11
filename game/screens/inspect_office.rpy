@@ -4,19 +4,24 @@ screen inspect_office():
 
     add "images/bg/office_evening.png"
 
-    # Небольшая подсказка
     text "Осмотр (кликни на объекты)" xpos 0.03 ypos 0.03
 
-    # ДВЕРЬ (условная зона слева)
+    # ОКНО (большая зона по центру-право, верхняя половина)
     button:
-        xpos 0.05 ypos 0.25 xsize 0.20 ysize 0.45
+        xpos 0.28
+        ypos 0.10
+        xsize 0.69
+        ysize 0.56
         background None
         hover_background None
-        action Function(_inspect_door)
+        action Function(_inspect_window)
 
-    # СТОЛ (условная зона справа)
+    # СТОЛ (нижняя центральная зона)
     button:
-        xpos 0.60 ypos 0.45 xsize 0.30 ysize 0.35
+        xpos 0.18
+        ypos 0.56
+        xsize 0.66
+        ysize 0.34
         background None
         hover_background None
         action Function(_inspect_desk)
@@ -26,16 +31,22 @@ screen inspect_office():
         action Return()
 
 init python:
-    def _inspect_door():
-        global clarity, inspected_door
-        if not inspected_door:
-            inspected_door = True
+    def _inspect_window():
+        global clarity, inspected_window
+        if not inspected_window:
+            inspected_window = True
             clarity += 1
-        renpy.say(None, "На двери нет таблички. Только свежая краска и след от снятого скотча.\nКак будто название здесь бывает… но не задерживается.")
+        renpy.say(None,
+            "За окном — стройка. Башенные краны стоят, как молчаливые скобки, удерживающие серое небо.\n"
+            "Огоньки в недостроенных этажах горят слишком ровно — будто кто-то проверяет, жив ли город."
+        )
 
     def _inspect_desk():
         global clarity, inspected_desk
         if not inspected_desk:
             inspected_desk = True
             clarity += 1
-        renpy.say(None, "В ящике лежит пачка чистых листов и одна ручка.\nРучка без логотипа. Как будто её купили специально, чтобы не запоминалась.")
+        renpy.say(None,
+            "На столе — ноутбук, пара листов и чей-то телефон.\n"
+            "Всё разложено так аккуратно, что кажется: здесь не работают — здесь подготавливают картинку работы."
+        )
