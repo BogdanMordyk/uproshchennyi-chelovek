@@ -10,3 +10,7 @@ default inspected_desk = False
 # --- Party inspection flags ---
 default inspected_tree = False
 default inspected_alcohol = False
+
+# --- Home TV inspection flags ---
+default inspected_tv = False
+default inspected_wine = False
