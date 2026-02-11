@@ -81,5 +81,8 @@ label office_slice:
     stop ambience fadeout 1.0
 
     scene black
-    n "Конец демо."
-    return
+    menu:
+        "Продолжить (корпоратив)":
+            jump party_slice
+        "Выйти":
+            return
